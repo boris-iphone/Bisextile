@@ -1,0 +1,14 @@
+def bisextile (year):
+  if (year%4==0 and year%100!=0) or (year%4==0 and year%100==0  and year%400==0):
+    return True
+  else:
+    return False
+
+
+x = int(input("Année : "))
+
+
+if bisextile(x):
+    print("L'année " + format(x) + " est bixestile")
+else:
+    print("L'année " + format(x) + " n'est pas bixestile")
